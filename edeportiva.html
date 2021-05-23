@@ -24,12 +24,12 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nuestros Productos
+                Deportes
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Pizza Premium</a>
-                <a class="dropdown-item" href="#">Pizza Vegetariana</a>
-                <a class="dropdown-item" href="#">Pizza Sabores del Mundo</a>
+                <a class="dropdown-item" href="#">Futbol</a>
+                <a class="dropdown-item" href="#">Bascket Ball</a>
+                <a class="dropdown-item" href="#">Tenis</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -57,11 +57,11 @@
     
     <div class="container text-center">
           <h1 class="mt-3 font-weight-bold">Estadisticas Deportivas</h1>
-          <p>Estadisticas Deportivas</p>
+          <p>Descubre las mejores páginas de estadísticas deportivas en 2021 y encuentra información actualizada para realizar tus apuestas deportivas con éxito.</p>
     </div>
       <!-- Carrusel -->
-    <div class="container">
-          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div class="container text-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -100,25 +100,31 @@
             </a>
           </div>
          </div> 
+        
           <!-- Registro -->   
-    <center> 
-     <div class="Registro animated2 fadeIn-1">
-			<form class="Formulario" action="../php/Registro.php"                method="POST">
+     <div class="container">
+      <div class="Registro animated2 fadeIn-1">
+			  <form class="Formulario" action="../php/Registro.php"method="POST">
 				<div class="Container">
 					<div class="input-group">
-						<input type="text" name="usuario" class="usuario"                 placeholder="Usuario" autocomplete="off" required />
+						<input type="text" name="usuario" class="usuario" placeholder="Usuario" autocomplete="off" required />
 					</div>
 					<div class="input-group">
-						<input type="email" name="correo" class="correo"                   placeholder="Correo" autocomplete="off" required />
+						<input type="email" name="correo" class="correo"placeholder="Correo" autocomplete="off" required />
+					</div>
+          <form>
+            <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+            <button type="submit">Validar RUT</button>
+            <script src="validarRUT.js"></script>
+          </form>
+					<div class="input-group">
+						<input type="password" name="pass" class="password"id="pass" placeholder="Contraseña" autocomplete="off"required />
 					</div>
 					<div class="input-group">
-						<input type="password" name="pass" class="password"               id="pass" placeholder="Contraseña" autocomplete="off"             required />
+						<span id="change" class="eye"></span><input type="password" name="pass2" class="password" id="pass2" autocomplete="off" placeholder="Confirmar contraseña" required />
 					</div>
-					<div class="input-group">
-						<span id="change" class="eye"></span><input                       type="password" name="pass2" class="password"                     id="pass2" autocomplete="off" placeholder="Confirmar               contraseña" required />
-					</div>
-          <textarea name="textarea" rows="10" cols="50">Comentarios</textarea>
-					<input type="submit" class="btn-submit"value="Regístrate" />
+          <p><textarea name="comentarios" required></textarea></p>
+          <input type="submit" class="btn-submit"value="Regístrate" />
 				</form>
 			<div class="Texto1">
 				¿Ya tienes cuenta?
@@ -127,10 +133,8 @@
 				<a href="Login.html">Iniciar Sesión</a>
 			    </div>
         </div>
-      </center>
-      
-   
-    
+      </div>
+        
     <!-- Pie de página -->
 <div class="text-center mt-3 bg-dark text-white">
   <p>Estadisticas España 2021 </p>
